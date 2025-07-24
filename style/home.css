@@ -77,6 +77,10 @@ a{
     font-family: 'HelveticaBold', sans-serif;
 }
 
+.title_contact{
+    font-size: 34px;
+}
+
 .description{
     width: 400px;
     font-size: 16px;
@@ -257,6 +261,15 @@ a{
 @media screen and (min-width: 0px) and (max-width:920px) {
     .card{
         margin-top: 50px;
+    }
+  }
+
+  @media screen and (min-width: 0px) and (max-width:700px) {
+    .header-image{
+        display: none;
+    }
+    .card{
+        padding: 0px;
     }
   }
   

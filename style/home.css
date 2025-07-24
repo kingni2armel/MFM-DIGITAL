@@ -82,7 +82,7 @@ a{
 }
 
 .description{
-    width: 400px;
+    max-width: 400px;
     font-size: 16px;
     margin-top: 20px;
     font-weight: lighter;
@@ -275,6 +275,21 @@ a{
         box-shadow:none;
         margin-top: -100px;
         padding: 30px;
+    }
+
+    .title_contact{
+       font-size: 30px;
+       text-align: center;
+    }
+    .title{
+        text-align: center;
+    }
+
+    .container_toggle{
+        display: none;
+    }
+    .description{
+      text-align: center    ;
     }
 
   

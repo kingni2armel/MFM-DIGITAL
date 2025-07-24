@@ -25,8 +25,8 @@ body{
 .container{
     width: 100%;
     display: flex;
-    justify-content: center;
-  
+    justify-content: space-evenly;
+    flex-direction: row;
     flex: 1;
     flex-wrap: wrap;
 }
@@ -34,7 +34,6 @@ body{
 /* mise en forme des informations de contact */
 .contain-text{ 
     margin-top: 80px;
-    margin-right: 90px;
 }
 
 .container_icone{
@@ -75,6 +74,7 @@ a{
 .title{
     font-weight: bold;
     font-family: 'HelveticaBold', sans-serif;
+    font-size: 34px;
 }
 
 .title_contact{
@@ -264,22 +264,21 @@ a{
     }
   }
 
-  @media screen and (min-width: 0px) and (max-width:700px) {
+  @media screen and (min-width: 0px) and (max-width:600px) {
     .header-image{
         display: none;
     }
+
     .card{
-        padding: 0px;
-        box-shadow: none;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow:none;
+        margin-top: -100px;
+        padding: 30px;
     }
-    .container_button{
-        margin-left: 10px;
-    }
-    .title_contact{
-        margin-left: 10px;
-    }
-    .description{
-        margin-left: 10px;
-    }
+
+  
+
+
   }
   

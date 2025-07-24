@@ -178,6 +178,7 @@ a{
     font-size: 16px;
     outline: none;
     transition: border-color 0.3s;
+    width: 100%;
   }
   
   .input_wrap input:focus {
@@ -271,11 +272,12 @@ a{
 
     .card{
         background-color: white;
-        border-radius: 10px;
         box-shadow:none;
-        margin-top: -100px;
-        padding: 30px;
+
+  
     }
+
+
 
     .title_contact{
        font-size: 30px;
@@ -285,14 +287,16 @@ a{
         text-align: center;
     }
 
-    .container_toggle{
+    .text-confidentialite{
         display: none;
     }
+   
     .description{
       text-align: center    ;
     }
 
-  
+
+
 
 
   }

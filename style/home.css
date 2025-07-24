@@ -270,6 +270,16 @@ a{
     }
     .card{
         padding: 0px;
+        box-shadow: none;
+    }
+    .container_button{
+        margin-left: 10px;
+    }
+    .title_contact{
+        margin-left: 10px;
+    }
+    .description{
+        margin-left: 10px;
     }
   }
   

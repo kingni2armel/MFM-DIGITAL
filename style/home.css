@@ -9,10 +9,12 @@ body{
 }
 /* 
  header(image)
+ le fichier figma demande normalement de laisser l'image a 374 pour la hauteur
+ mais pendant l'implementation a cette taille la l'image n'est pas vraiment visible, raison pour laquel j'ai mis a 500px
 */
 .header-image{
     width: 100vw;
-    height: 374px;
+    height: 500px;
     background-image: url('../images//header.jpg');
     background-size: cover;
     background-position: center;

@@ -1,0 +1,260 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Helvetica;
+}
+/* 
+ header(image)
+*/
+.header-image{
+    width: 100vw;
+    height: 374px;
+    background-image: url('../images//header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*section*/
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+/* mise en forme des informations de contact */
+.contain-text{ 
+    margin-top: 80px;
+    margin-right: 90px;
+}
+
+.container_icone{
+    margin-top: 15px;
+}
+
+.container_icone .icone-indeed {
+    margin-left: 5px;
+}
+
+.adresse{
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: lighter;
+
+}
+.phoneNumber{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+a{
+    font-weight: lighter;
+    color: black;
+}
+
+
+/* mise en forme de la card qui contient le formulaire */
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 29px 29px -1px rgba(94, 120, 179, 0.53);
+    margin-top: -100px;
+    padding: 30px;
+}
+
+.title{
+    font-weight: bold;
+    font-family: 'HelveticaBold', sans-serif;
+}
+
+.description{
+    width: 400px;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: lighter;
+    line-height: 180%;
+}
+
+/* mise en forme des bouttons toggle */
+.container_button{
+    display: flex;
+    width: 50%;
+    margin-top: 30px;
+    background-color: #EFEFEF;
+    height: 41px;
+    border-radius: 50px;
+}
+
+
+.container_button  .btn{
+    border-radius: 50px;
+    width: 100%;
+    transition: all 0.3s ease;
+
+}
+
+.btn {
+    background-color: #EFEFEF;
+    color: #333;
+    border: 1px solid #333;
+    border-color: #EFEFEF;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+
+  .container_button .btn.active {
+    background-color: #9DD129;
+    color: white;
+  }
+
+  /* mise en forme du bloc parent qui contient les 2 toggles card */
+  .container_toggle {
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+    margin-top: 20px;
+  }
+  
+  .toggle {
+    display: none;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .toggle.active {
+    display: block;
+  }
+  
+ /* animation pour le changement de formulaire */
+
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateX(20px);}
+    to {opacity: 1; transform: translateX(0);}
+  }
+  
+
+
+/* code mettant en forme le formulaire */
+.flex-form{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.input_wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .input_wrap label {
+    margin-left: -10px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+  }
+  
+  .input_wrap input {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: 2px ;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input_wrap input:focus {
+    border-bottom: 1px solid #aaa; /* vert lors du focus */
+  }
+
+
+  /* mise en forme du bouton radio */
+
+  .container_condition{
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .container-radio p {
+    width: 400px;
+    margin-left: 10px;
+    line-height: 180%;
+    font-weight: lighter;
+  }
+
+  .container-radio {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .container-radio input[type="radio"] {
+    display: none; /* Cache le radio natif */
+  }
+
+  .custom-radio {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #9DD129;
+    border-radius: 20%;
+    position: relative;
+    margin-top: 4px;
+  }
+
+  .container-radio input[type="radio"]:checked + .custom-radio::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    background: #9DD129;
+    border-radius: 50%;
+  }
+
+
+
+/* mise en forme du bouton submit */
+
+.containerSubmitButton{
+    display: flex;
+    justify-content: center;
+}
+
+.containerSubmitButton button{
+    border:1px solid #9DD129;
+    background-color: #9DD129;
+    color: white;
+    width: 198px;
+    height: 57px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 44px;
+    margin-top: 10px;
+}
+
+.footer{
+    margin-top: 200px;
+}
+
+
+/* responsive desing */
+@media screen and (min-width: 0px) and (max-width:920px) {
+    .card{
+        margin-top: 50px;
+    }
+  }
+  

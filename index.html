@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- importatation du fichier style -->
+    <link rel="stylesheet" href="./style/home.css">
+
+    <!-- importation d'un cdn pour les icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Contactez-nous</title>
+</head>
+<body>
+ 
+    <!-- section header -->
+    <div class="header-image"></div>
+
+    <section class="container">
+        <!-- informations de contact -->
+        <div class="contain-text">
+            <h1 class="title">MFM DIGITAL</h1>
+            <p class="adresse">Rue Middelbourg 66, 1170 Watermael-Boitsfort  </p>
+            <p class="phoneNumber"><a href="">+32 2 880 96 92</a></p>
+            <p class="phoneNumber"><a href="">info@mfmdigital.com</a></p>
+            <div class="container_icone">
+                <a href=""><img src="./images/uiw_facebook.png" alt=""></a>
+                <a href="" class="icone-indeed"><img src="./images/Vector.png" alt=""></a>
+            </div>
+        </div>
+
+
+        <!-- formulaire de contact -->
+
+        <div class="card">
+            <h1 class="">CONTACTEZ-NOUS</h1>
+            <p class="description">Notre agence vous promet une expertise personnalisée et un accompagnement sur-mesure pour la réalisation de votre site internet et/ou de votre application.</p>
+
+            <!-- boutton toggle de choix -->
+
+            <div class="container_button">
+                <button
+                    class="btn btn_1 active" 
+                    onclick="showPanel('toggle1', this)">
+                    <i class="fas fa-frog"></i>
+                    Crapaud
+                </button>
+                <button 
+                    class="btn btn_2" 
+                    onclick="showPanel('toggle2', this)">
+                    <i class="fas fa-frog icon"></i> Grenouille
+                </button>
+            </div>
+              
+
+            <div class="container_toggle">
+                
+                <!-- formulaire 1 -->
+                <div class="container_form toggle active" id="toggle1">      
+                    <form action="">
+                        <div class="flex-form">
+                            <div class="input_wrap">
+                                <label for="nom">Nom*</label>
+                                <input 
+                                    type="text"
+                                    id="nom"
+                                    name="nom" 
+                                    required
+                                >
+                            </div>
+                            <div class="input_wrap">
+                                <label for="nom">Prénom*</label>
+                                <input 
+                                    type="text"
+                                    id="nom"
+                                    name="nom"
+                                    required
+                                >
+                            </div>
+                        </div>
+        
+                        <div class="input_wrap">
+                            <label for="nom">Numéro de téléphone*</label>
+                           <input
+                                type="tel" 
+                                id="phoneNumber" 
+                                name="phoneNumber" 
+                                required
+                            >
+                        </div>
+        
+                        <div class="input_wrap">
+                            <label for="email">Email*</label>
+                            <input
+                                type="email"
+                                id="email" 
+                                name="email" 
+                                required
+                            >
+                        </div>
+        
+                        <div class="input_wrap">
+                            <label for="adresse">Adresse :</label>
+                           <input
+                                type="text"
+                                id="adresse" 
+                                name="adresse"
+                            >
+                        </div>
+        
+                        <div class="flex-form">
+                            <div class="input_wrap">
+                                <label for="nom">Code postal :</label>
+                                <input 
+                                    type="tel"
+                                    id="codePostal"
+                                    name="codePostal" 
+                                >
+                            </div>
+                            <div class="input_wrap">
+                                <label for="nom">Ville :</label>
+                                <input 
+                                    type="text"
+                                    id="ville" 
+                                    name="ville"
+                                >
+                            </div>
+                        </div>
+        
+                       
+                      <div class="">
+                        <label class="container-radio">
+                            <input 
+                                type="radio" 
+                                name="option" 
+                                value="1"
+                            >
+                            
+                            <span class="custom-radio"></span>
+                            <p>
+                                J’accepte que mes données soient recueillies par une famille de crapauds ou de grenouilles aux étangs d’Ixelles.
+                            </p>
+                        </label>
+                      </div>
+
+        
+                        <div class="containerSubmitButton">
+                            <button 
+                                type="submit"
+                                class="button_submit"
+                            >
+                            Envoyer
+                            </button>
+                        </div>
+                    </form>
+                </div>
+    
+                <!-- formulaire 2 -->
+                <div class="toggle" id="toggle2">
+                    <p>Formulaire grenouille à venir...</p>
+                </div>
+            </div>
+
+                
+        </div>
+    </section>
+
+    <!-- section qui contiendra le footer -->
+    <section class="footer">
+    </section>
+
+</body>
+</html>
+
+<script src="./js/style.js"></script>

@@ -195,7 +195,7 @@ a{
   }
 
   .container-radio p {
-    width: 400px;
+    max-width: 400px;
     margin-left: 10px;
     line-height: 180%;
     font-weight: lighter;
@@ -277,8 +277,11 @@ a{
   
     }
 
-
-
+    .container_icone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .title_contact{
        font-size: 30px;
        text-align: center;
@@ -286,14 +289,24 @@ a{
     .title{
         text-align: center;
     }
-
-    .text-confidentialite{
-        display: none;
+    .paraCenter{
+        text-align: center;
     }
    
     .description{
-      text-align: center    ;
+      text-align: center;
     }
+    .containerSubmitButton{
+        margin-top: 30px;
+    }
+    .card_button{
+        display: flex;
+        justify-content: center;
+    }
+    .container_button{
+        width: 70%;
+    }
+ 
 
 
 

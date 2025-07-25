@@ -92,7 +92,7 @@ a{
 /* mise en forme des bouttons toggle */
 .container_button{
     display: flex;
-    width: 50%;
+    width: 60%;
     margin-top: 30px;
     background-color: #EFEFEF;
     height: 41px;

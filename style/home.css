@@ -1,4 +1,11 @@
 
+/*
+* dans mon code je vais priviligier l'utilisation des flexbox  qui facilitent la disposition des elements sur une page en les rendant resposnsive 
+*/
+
+
+/* retirer les marges par defaut  */
+
 *{
     margin: 0;
     padding: 0;

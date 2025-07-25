@@ -273,8 +273,6 @@ a{
     .card{
         background-color: white;
         box-shadow:none;
-
-  
     }
 
     .container_icone{
@@ -305,6 +303,11 @@ a{
     }
     .container_button{
         width: 70%;
+        margin-top: 70px;
+    }
+
+    .container_form{
+        margin-top: 40px;
     }
  
 
